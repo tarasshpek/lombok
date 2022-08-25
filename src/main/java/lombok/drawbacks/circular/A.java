@@ -1,4 +1,4 @@
-package lombok.drawbacks;
+package lombok.drawbacks.circular;
 
 import lombok.EqualsAndHashCode;
 import lombok.Setter;
@@ -27,6 +27,7 @@ public class A {
 
         System.out.println(a1.toString()); // StackOverflowError
         System.out.println(a1.equals(a2)); // StackOverflowError
+        System.out.println(a1.hashCode()); // StackOverflowError
     }
     
 }

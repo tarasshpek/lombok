@@ -1,4 +1,4 @@
-package lombok.drawbacks;
+package lombok.drawbacks.circular;
 
 import lombok.EqualsAndHashCode;
 import lombok.Setter;
